@@ -1,0 +1,22 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% booksByCategory.forEach((category) => { %>
+      <h2>Thể loại <%= category.categoryId %></h2>
+      <div>
+        <% category.books.forEach((book) => { %>
+          <div>
+            <h3><%= book.Title %></h3>
+            <p><%= book.Author %></p>
+            <p><%= book.Content %></p>
+          </div>
+        <% }) %>
+      </div>
+    <% }) %>
+  </body>
+</html>

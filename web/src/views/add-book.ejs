@@ -1,0 +1,29 @@
+<!-- add-book.ejs -->
+<h1>Thêm sách mới</h1>
+<form method="POST" action="/add-book">
+  <div class="form-group">
+    <label for="title">Tiêu đề</label>
+    <input type="text" class="form-control" id="title" name="title" required>
+  </div>
+  <div class="form-group">
+    <label for="category_Id">Thể loại</label>
+    <input type="text" class="form-control" id="category_Id" name="category_Id" required>
+  </div>
+  <div class="form-group">
+    <label for="author">Tác giả</label>
+    <input type="text" class="form-control" id="author" name="author">
+  </div>
+  <div class="form-group">
+    <label for="content">Nội dung</label>
+    <textarea class="form-control" id="content" name="content"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="description">Mô tả</label>
+    <textarea class="form-control" id="description" name="description"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="user_name">Tên người đăng</label>
+    <input type="text" class="form-control" id="user_name" name="user_name">
+  </div>
+  <button type="submit" class="btn btn-primary">Thêm sách</button>
+</form>
